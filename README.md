@@ -2,10 +2,6 @@
 
 A simple star rating component built with Vue 3.
 
-<p align="center">
-    <img src="https://i.imgur.com/iYcPH69.gif">
-</p>
-
 ## Usage
 
 Full source and dev server:
