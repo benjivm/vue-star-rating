@@ -11,18 +11,10 @@
     </div>
 </template>
 
-<script>
+<script setup>
+    import { ref } from 'vue';
     import StarRating from './components/StarRating.vue';
 
-    export default {
-        components: {
-            StarRating
-        },
 
-        data() {
-            return {
-                rating: 0
-            };
-        }
-    };
+    const rating = ref(0);
 </script>
