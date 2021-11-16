@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col justify-center h-screen">
         <star-rating
-            :rating="rating"
-            @update:rating="rating = $event"
+            v-model="rating"
+            :stars="10"
         />
 
         <div class="mx-auto p-3">
@@ -14,7 +14,6 @@
 <script setup>
     import { ref } from 'vue';
     import StarRating from './components/StarRating.vue';
-
 
     const rating = ref(0);
 </script>
