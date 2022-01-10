@@ -4,12 +4,12 @@ A simple star rating component built with Vue 3.
 
 ## Usage
 
-Full source and dev server:
+Full source and preview/dev server:
 
 - Clone or download this repository to a directory of your choice
 - Install dependencies: `npm i`
-- Run dev server: `npm run dev`
-- Build: `npm run build`
+- Build: `npm run build` (or skip this and the next step and just run the dev server: `npm run dev`)
+- Run preview: `npm run serve`
 
 Component only:
 
