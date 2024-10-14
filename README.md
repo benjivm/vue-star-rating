@@ -15,8 +15,8 @@ A simple star rating component built with Vue 3.
 
 - Copy the [StarRating.vue](https://github.com/benjivm/vue-star-rating/blob/master/src/components/StarRating.vue) component to your project.
 - Replace all styles with your own (unless you are already using [Tailwind CSS](https://tailwindcss.com)).
-- Use `v-model` to get the rating from the component, [like this](https://github.com/benjivm/vue-star-rating/blob/master/src/App.vue#L11).
-- Optionally provide the [`stars` prop](https://github.com/benjivm/vue-star-rating/blob/master/src/App.vue#L12) if you'd like fewer (or more) stars, the default is 10.
+- Use `v-model` to get the rating from the component, [like this](https://github.com/benjivm/vue-star-rating/blob/master/src/App.vue#L10).
+- Optionally provide the `stars` prop like fewer (or more) stars, the default is 10.
 
 ### Notes
 
