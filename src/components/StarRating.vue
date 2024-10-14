@@ -1,14 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const emit = defineEmits(['update:modelValue']);
-
-const props = defineProps({
-    modelValue: {
-        type: Number,
-        required: false,
-        default: 0,
-    },
+defineProps({
     stars: {
         type: Number,
         required: false,
@@ -16,14 +9,16 @@ const props = defineProps({
     },
 });
 
+const modelValue = defineModel({
+    type: Number,
+    required: false,
+    default: 0,
+});
+
 const hoverValue = ref(0);
 
 function onSetRating(value) {
-    if (props.modelValue === value) {
-        return emit('update:modelValue', 0);
-    }
-
-    emit('update:modelValue', value);
+    modelValue.value = modelValue.value === value ? 0 : value;
 }
 </script>
 
@@ -46,7 +41,8 @@ function onSetRating(value) {
                 :class="[
                     '-mx-1 h-10 w-10 text-gray-300 transition duration-75',
                     {
-                        'text-yellow-500': (modelValue >= star && !hoverValue) || hoverValue >= star,
+                        'text-yellow-500':
+                            (modelValue >= star && !hoverValue) || hoverValue >= star,
                     },
                 ]"
             >

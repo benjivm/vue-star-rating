@@ -7,11 +7,8 @@ const rating = ref(0);
 
 <template>
     <div class="flex h-screen flex-col justify-center">
-        <StarRating
-            v-model="rating"
-            :stars="10"
-        />
+        <StarRating v-model="rating" />
 
-        <div class="mx-auto p-3">Rating: {{ rating }}</div>
+        <div class="mx-auto p-3 font-mono font-black">Rating: {{ rating }}</div>
     </div>
 </template>

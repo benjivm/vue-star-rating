@@ -4,14 +4,14 @@ A simple star rating component built with Vue 3.
 
 ## Usage
 
-Full source and preview/dev server:
+### Full source and preview/dev server:
 
 - Clone or download this repository to a directory of your choice
 - Install dependencies: `npm i`
 - Build: `npm run build` (or skip this and the next step and just run the dev server: `npm run dev`)
 - Run preview: `npm run serve`
 
-Component only:
+### Component
 
 - Copy the [StarRating.vue](https://github.com/benjivm/vue-star-rating/blob/master/src/components/StarRating.vue) component to your project.
 - Replace all styles with your own (unless you are already using [Tailwind CSS](https://tailwindcss.com)).
