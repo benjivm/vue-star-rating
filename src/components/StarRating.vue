@@ -53,3 +53,4 @@ function onSetRating(value) {
         </button>
     </div>
 </template>
+
